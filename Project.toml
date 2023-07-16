@@ -12,6 +12,10 @@ LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Observables = "510215fc-4207-5dde-b226-833fc4488ee2"
 
 [compat]
+Agents = "5.8.0"
+GLMakie = "0.8.2"
+InteractiveDynamics = "0.22"
+Observables = "0.5.4"
 julia = "1.6"
 
 [extras]
