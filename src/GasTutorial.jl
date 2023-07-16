@@ -1,5 +1,9 @@
 module GasTutorial
 
-# Write your package code here.
+using LinearAlgebra
+
+function niall()
+	sin(pi/6)
+end
 
 end

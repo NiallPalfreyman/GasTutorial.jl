@@ -2,5 +2,5 @@ using GasTutorial
 using Test
 
 @testset "GasTutorial.jl" begin
-    # Write your tests here.
+    0.49 < GasTutorial.niall() < 0.51
 end
