@@ -1,0 +1,13 @@
+name = "GasTutorial"
+uuid = "19bc4d8e-e503-49ab-846b-d8bb6503d308"
+authors = ["Niall Palfreyman"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
