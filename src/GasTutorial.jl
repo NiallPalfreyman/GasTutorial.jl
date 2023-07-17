@@ -368,9 +368,12 @@ function run()
 
 	model = gastutorial()
 	
-	monitor = GLMakie.GLFW.GetPrimaryMonitor() # get primary monitor
-	width = GLMakie.MonitorProperties(monitor).videomode.width # get width of monitor
-	height = GLMakie.MonitorProperties(monitor).videomode.height # get height of monitor
+#	monitor = GLMakie.GLFW.GetPrimaryMonitor() # get primary monitor
+#	width = GLMakie.MonitorProperties(monitor).videomode.width # get width of monitor
+#	height = GLMakie.MonitorProperties(monitor).videomode.height # get height of monitor
+	
+	width = 2736
+	height = 1824
 
 	heatkwargs = (colorrange = (0,1), colormap =:greys,)
 	
