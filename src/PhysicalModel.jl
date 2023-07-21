@@ -9,7 +9,7 @@ Authors: HSWT/AI Simulation Development Group, 20/06/23.
 
 module PhysicalModel
 
-include("AgentTools.jl")
+#include("AgentTools.jl")
 using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, Observables
 
 export calc_temperature, calc_pressure, calc_n_mol, calc_real_n_particles, momentum, kinetic_energy,
