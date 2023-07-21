@@ -10,7 +10,8 @@ Authors: HSWT/AI Simulation Development Group, 20/06/23.
 module PhysicalModel
 
 include("AgentTools.jl")
-using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, Observables
+#using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, Observables
+using Agents, LinearAlgebra, InteractiveDynamics, Observables
 
 export calc_temperature, calc_pressure, calc_n_mol, calc_real_n_particles, momentum, kinetic_energy, scale_speed, calc_and_scale_speed, calc_total_vol_dimension, calc_entropy_change, calc_internal_energy, calc_volume
 
@@ -24,6 +25,7 @@ Return the momentum of this particle.
 function momentum(particle)
 	particle.mass * particle.speed * collect(particle.vel)
 end
+
 #-----------------------------------------------------------------------------------------
 """
 	scale_speed(speed, max_speed)
@@ -36,6 +38,7 @@ function scale_speed(speed, max_speed)
 	end
 	return 15 * speed / max_speed
 end
+
 #------------------------------------------------------------------------------------------
 """
 	calc_n_mol(model)
@@ -65,6 +68,7 @@ function calc_total_vol_dimension(volume, x_axis_vol=5.0)
 	y_axis_vol = volume/x_axis_vol
 	return [y_axis_vol, x_axis_vol, 1.0] 
 end
+
 #-----------------------------------------------------------------------------------------
 """
 	calc_pressure(model)
@@ -144,7 +148,7 @@ end
 
 #------------------------------------------------------------------------------------------
 """
-	calc_internal_energy
+	calc_internal_energy(model)
 
 Return the internal energy of the system.
 """
@@ -166,6 +170,4 @@ function calc_and_scale_speed(model)
 	return scaled_speed
 end
 
-#------------------------------------------------------------------------------------------
-
-end # module
+end

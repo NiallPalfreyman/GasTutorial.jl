@@ -9,7 +9,8 @@ Authors: HSWT/AI Simulation Development Group, 3/7/2022.
 """
 module AgentTools
 
-using Agents, GLMakie, InteractiveDynamics, LinearAlgebra, Observables
+#using Agents, GLMakie, InteractiveDynamics, LinearAlgebra, Observables
+using Agents, InteractiveDynamics, LinearAlgebra, Observables
 
 import InteractiveUtils:@which
 
