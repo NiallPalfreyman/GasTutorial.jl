@@ -10,8 +10,8 @@ module GasTutorial
 include("AgentTools.jl")
 include("PhysicalModel.jl")
 include("ViewModel.jl")
-#using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, .AgentTools, .PhysicalModel
-using Agents, LinearAlgebra, InteractiveDynamics, .AgentTools, .PhysicalModel
+
+using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, .AgentTools, .PhysicalModel
 
 #-----------------------------------------------------------------------------------------
 # Module types:

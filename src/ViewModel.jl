@@ -11,8 +11,8 @@ module ViewModel
 
 include("AgentTools.jl")
 include("PhysicalModel.jl")
-#using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, Observables
-using Agents, LinearAlgebra, InteractiveDynamics, Observables
+
+using Agents, LinearAlgebra, GLMakie, InteractiveDynamics, Observables
 
 export set_slider, add_or_remove_agents!, create_custom_slider
 const non_id = -1

@@ -9,8 +9,7 @@ Authors: HSWT/AI Simulation Development Group, 3/7/2022.
 """
 module AgentTools
 
-#using Agents, GLMakie, InteractiveDynamics, LinearAlgebra, Observables
-using Agents, InteractiveDynamics, LinearAlgebra, Observables
+using Agents, GLMakie, InteractiveDynamics, LinearAlgebra, Observables
 
 import InteractiveUtils:@which
 
@@ -19,14 +18,6 @@ export abmplayground, multicoloured, dejong2, diffuse4, diffuse4!, diffuse8, dif
 
 #-----------------------------------------------------------------------------------------
 # Module methods:
-#-----------------------------------------------------------------------------------------
-"""
-	size( cs::ContinuousSpace)
-
-Extend Base.size to ContinuousSpaces to allow heatmaps to work in abmplot.
-"""
-Base.size(cs::Agents.ContinuousSpace) = cs.dims
-
 #-----------------------------------------------------------------------------------------
 """
 	multicoloured(agent)
